@@ -14,27 +14,31 @@
                     var getal1=parseInt($("#getal1").val());
                     var getal2=parseInt($("#getal2").val());
                     var uitkomst=getal1 + getal2;
-                    alertfn(uitkomst);
+                    $("#getal3").text(uitkomst);
                 });
+
                 $("#min").click(function(){
                     var getal1=$("#getal1").val();
                     var getal2=$("#getal2").val();
                     var uitkomst=getal1-getal2;
-                    alertfn(uitkomst);
+                    $("#getal3").text(uitkomst);
                 });
+
                 $("#keer").click(function(){
                     var getal1=$("#getal1").val();
                     var getal2=$("#getal2").val();
                     var uitkomst=getal1*getal2;
-                    alertfn(uitkomst);
+                    $("#getal3").text(uitkomst);
                 });
+
                 $("#delen").click(function(){
                     var getal1=$("#getal1").val();
                     var getal2=$("#getal2").val();
                     var uitkomst=getal1/getal2;
-                    alertfn(uitkomst);
+                    $("#getal3").text(uitkomst);
                 });
             });
+           
         </script>
     </head>
 
@@ -49,7 +53,11 @@
             <input type="button" id="min" name="min" value="-" style="width:50px">
             <input type="button" id="keer" name="keer" value="x" style="width:50px">
             <input type="button" id="delen" name="delen" value="÷" style="width:50px">
+            <h4>De uitkomst:</h4>
+            <p id="getal3"></p>
         </form>
+        
+        
         <noscript>
             Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
             </noscript>            
