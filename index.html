@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rekenmachine</title>
+
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js">
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $("#plus").click(function(){
+                    var getal1=parseInt($("#getal1").val());
+                    var getal2=parseInt($("#getal2").val());
+                    var uitkomst=getal1 + getal2;
+                    window.alert(uitkomst);
+                });
+                $("#min").click(function(){
+                    var getal1=$("#getal1").val();
+                    var getal2=$("#getal2").val();
+                    var uitkomst=getal1-getal2;
+                    window.alert(uitkomst);
+                });
+                $("#keer").click(function(){
+                    var getal1=$("#getal1").val();
+                    var getal2=$("#getal2").val();
+                    var uitkomst=getal1*getal2;
+                    window.alert(uitkomst);
+                });
+                $("#delen").click(function(){
+                    var getal1=$("#getal1").val();
+                    var getal2=$("#getal2").val();
+                    var uitkomst=getal1/getal2;
+                    window.alert(uitkomst);
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h3>Rekenmachine</h3>
+        <form>
+            Voer een getal in:
+            <input type="number" id="getal1"><br><br>
+            Voer nog een getal in:
+            <input type="number" id="getal2"><br><br>
+            <input type="button" id="plus" name="plus" value="+" style="width:50px">
+            <input type="button" id="min" name="min" value="-" style="width:50px">
+            <input type="button" id="keer" name="keer" value="x" style="width:50px">
+            <input type="button" id="delen" name="delen" value="÷" style="width:50px">
+        </form>
+        <noscript>
+            Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+            </noscript>            
+    </body>
+</html>
