@@ -12,8 +12,8 @@
             $(document).ready(function(){
 
                 $("#plus").click(function(){
-                    var getal1=parseInt($("#getal1").val());
-                    var getal2=parseInt($("#getal2").val());
+                    var getal1=parseFloat($("#getal1").val());
+                    var getal2=parseFloat($("#getal2").val());
                     var uitkomst=getal1 + getal2;
                     $("#getal3").text(uitkomst);
                 });
