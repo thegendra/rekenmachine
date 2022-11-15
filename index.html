@@ -2,9 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.75">
         <title>Rekenmachine</title>
-       
+
         <script src="https://code.jquery.com/jquery-3.1.0.min.js">
         </script>
         
@@ -19,22 +18,22 @@
                 });
 
                 $("#min").click(function(){
-                    var getal1=$("#getal1").val();
-                    var getal2=$("#getal2").val();
+                    var getal1=parseFloat($("#getal1").val());
+                    var getal2=parseFloat($("#getal2").val());
                     var uitkomst=getal1-getal2;
                     $("#getal3").text(uitkomst);
                 });
 
                 $("#keer").click(function(){
-                    var getal1=$("#getal1").val();
-                    var getal2=$("#getal2").val();
+                    var getal1=parseFloat($("#getal1").val());
+                    var getal2=parseFloat($("#getal2").val());
                     var uitkomst=getal1*getal2;
                     $("#getal3").text(uitkomst);
                 });
 
                 $("#delen").click(function(){
-                    var getal1=$("#getal1").val();
-                    var getal2=$("#getal2").val();
+                    var getal1=parseFloat($("#getal1").val());
+                    var getal2=parseFloat($("#getal2").val());
                     var uitkomst=getal1/getal2;
                     $("#getal3").text(uitkomst);
                 });
@@ -50,7 +49,6 @@
             <input type="number" id="getal1"><br><br>
             Voer nog een getal in:
             <input type="number" id="getal2"><br><br>
-            Klik op een knop:
             <input type="button" id="plus" name="plus" value="+" style="width:50px">
             <input type="button" id="min" name="min" value="-" style="width:50px">
             <input type="button" id="keer" name="keer" value="x" style="width:50px">
@@ -64,4 +62,5 @@
             Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
             </noscript>            
     </body>
+
 </html>
